@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doctor G - Premium Healthcare Excellence</title>
+    <meta name="description" content="Doctor G - Leading healthcare provider offering comprehensive medical facilities.">
+    <meta name="keywords" content="healthcare, hospital, medical services, health checkup, doctor G">
+    <meta name="author" content="Doctor G Healthcare">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-shadow"></div>
+    <div class="cursor"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo-container">
+                <div class="logo-icon">🏥</div>
+                <div class="logo-text">
+                    <h1>Doctor G</h1>
+                    <p>Healthcare Excellence</p>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#checkup">Checkup Camps</a></li>
+                <li><a href="#door-to-door">Door Service</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn-book" onclick="scrollTo('contact')">BOOK NOW</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Your Health is Our <span>Priority</span></h1>
+                <p>Experience world-class healthcare with compassion, expertise, and state-of-the-art medical facilities. We're committed to serving your health journey with personalized care.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollTo('contact')">Book Appointment</button>
+                    <button class="btn btn-secondary" onclick="scrollTo('checkup')">Free Checkup Camp</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Medical Experts</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Emergency Care</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-box">👨‍⚕️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="section-title">
+            <h2>Our Premium <span>Services</span></h2>
+            <div class="section-divider"></div>
+            <p>Comprehensive healthcare solutions designed for your complete wellness</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">🏥</div>
+                <h3>Multi-Specialty Hospital</h3>
+                <p>State-of-the-art facilities equipped with advanced medical technology and experienced specialist doctors across all medical fields.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">👨‍⚕️</div>
+                <h3>Expert Medical Team</h3>
+                <p>Highly qualified doctors and healthcare professionals dedicated to providing personalized and compassionate patient care.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">🔬</div>
+                <h3>Advanced Diagnostics</h3>
+                <p>Cutting-edge diagnostic center with latest imaging technology and laboratory services for accurate health assessment.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">🚑</div>
+                <h3>24/7 Emergency Care</h3>
+                <p>Round-the-clock emergency services with trained paramedics, ambulances, and critical care units for urgent situations.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">💪</div>
+                <h3>Rehabilitation Services</h3>
+                <p>Comprehensive physical therapy and rehabilitation programs for recovery and optimal health restoration.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">📱</div>
+                <h3>Telemedicine Platform</h3>
+                <p>Convenient online consultation services connecting you with expert doctors from the comfort of your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <div class="stats-section reveal">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number-big">15+</div>
+                <div class="stat-label-white">Years of Excellence</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number-big">500+</div>
+                <div class="stat-label-white">Healthcare Professionals</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number-big">100K+</div>
+                <div class="stat-label-white">Lives Transformed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number-big">98%</div>
+                <div class="stat-label-white">Patient Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section id="features">
+        <div class="section-title">
+            <h2>Why Choose <span>Doctor G</span>?</h2>
+            <div class="section-divider"></div>
+            <p>Excellence in healthcare is our commitment to you</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">✓</div>
+                <h4>ISO Certified</h4>
+                <p>Internationally accredited facilities maintaining highest quality and safety standards in healthcare delivery.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">💰</div>
+                <h4>Affordable Care</h4>
+                <p>Transparent pricing with flexible payment plans to make healthcare accessible to everyone in our community.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">❤️</div>
+                <h4>Patient Focused</h4>
+                <p>Personalized treatment plans tailored to your specific health needs and wellness goals with utmost care.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🔧</div>
+                <h4>Modern Technology</h4>
+                <p>Latest medical equipment and digital health solutions ensuring precise diagnosis and effective treatment.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🌍</div>
+                <h4>Expert Network</h4>
+                <p>Collaboration with leading hospitals and specialists globally for comprehensive healthcare services.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">⏰</div>
+                <h4>Always Available</h4>
+                <p>Continuous support through 24/7 helpline and emergency services for your peace of mind anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPARTMENTS SECTION -->
+    <section id="departments">
+        <div class="section-title">
+            <h2>Our <span>Departments</span></h2>
+            <div class="section-divider"></div>
+            <p>Specialized medical services across all major healthcare disciplines</p>
+        </div>
+        <div class="departments-grid">
+            <div class="dept-card reveal">
+                <div class="dept-icon">❤️</div>
+                <h4>Cardiology</h4>
+                <p>Heart and cardiovascular disease diagnosis and treatment with advanced surgical and interventional techniques.</p>
+            </div>
+            <div class="dept-card reveal">
+                <div class="dept-icon">🧠</div>
+                <h4>Neurology</h4>
+                <p>Specialized care for nervous system disorders, brain conditions, and neurological emergencies with expert neurologists.</p>
+            </div>
+            <div class="dept-card reveal">
+                <div class="dept-icon">🦴</div>
+                <h4>Orthopedics</h4>
+                <p>Bone and joint surgery services including trauma care, arthroscopy, and rehabilitation for mobility restoration.</p>
+            </div>
+            <div class="dept-card reveal">
+                <div class="dept-icon">👶</div>
+                <h4>Pediatrics</h4>
+                <p>Specialized healthcare for infants and children with child-friendly facilities and experienced pediatricians.</p>
+            </div>
+            <div class="dept-card reveal">
+                <div class="dept-icon">👩‍⚕️</div>
+                <h4>Obstetrics</h4>
+                <p>Comprehensive pregnancy care and women's health services ensuring safe delivery and maternal wellness.</p>
+            </div>
+            <div class="dept-card reveal">
+                <div class="dept-icon">🦷</div>
+                <h4>Dental Care</h4>
+                <p>Complete dental and oral health services from routine checkups to advanced cosmetic and surgical procedures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEALTH CHECKUP SECTION -->
+    <section id="checkup">
+        <div class="section-title">
+            <h2>Free Health Checkup <span>Camps</span></h2>
+            <div class="section-divider"></div>
+            <p>Regular health screening for early detection and disease prevention</p>
+        </div>
+        <div class="checkup-container">
+            <div class="checkup-content">
+                <h3>Free Annual Health <span>Screening</span></h3>
+                <p>We believe in preventive healthcare. Our regular health checkup camps provide comprehensive screening to detect health issues early and promote wellness across communities.</p>
+                <ul class="checkup-list">
+                    <li>Complete Blood Tests & Analysis</li>
+                    <li>Blood Pressure & Heart Rate Monitoring</li>
+                    <li>Diabetes Screening & Management</li>
+                    <li>BMI & Fitness Assessment</li>
+                    <li>Cholesterol & Lipid Profile Check</li>
+                    <li>Vision & Hearing Assessment</li>
+                    <li>Expert Medical Consultation</li>
+                    <li>Personalized Health Report & Recommendations</li>
+                </ul>
+                <button class="btn btn-primary" onclick="scrollTo('contact')">Register for Camp</button>
+            </div>
+            <div class="checkup-image">📋</div>
+        </div>
+    </section>
+
+    <!-- DOOR-TO-DOOR SECTION -->
+    <section id="door-to-door">
+        <div class="section-title">
+            <h2>Door-to-Door Health <span>Services</span></h2>
+            <div class="section-divider"></div>
+            <p>Healthcare comes to you with our mobile medical units and home health services</p>
+        </div>
+        <div class="door-cards">
+            <div class="door-card reveal">
+                <div class="door-card-icon">🚑</div>
+                <h4>Mobile Health Units</h4>
+                <p>Fully equipped mobile medical vans visiting your locality with diagnostic equipment and trained medical professionals.</p>
+            </div>
+            <div class="door-card reveal">
+                <div class="door-card-icon">💊</div>
+                <h4>Home Health Services</h4>
+                <p>Nursing care, medication administration, wound dressing, and post-operative care in the comfort of your home.</p>
+            </div>
+            <div class="door-card reveal">
+                <div class="door-card-icon">🩺</div>
+                <h4>Health Screening Camps</h4>
+                <p>Regular community health camps organized in your area for preventive screening and health awareness programs.</p>
+            </div>
+            <div class="door-card reveal">
+                <div class="door-card-icon">📱</div>
+                <h4>Remote Health Monitoring</h4>
+                <p>Continuous health monitoring with regular check-ups, follow-ups, and telehealth consultations for chronic care management.</p>
+            </div>
+            <div class="door-card reveal">
+                <div class="door-card-icon">👴</div>
+                <h4>Senior Care Services</h4>
+                <p>Specialized healthcare and personal care services for elderly patients ensuring dignity and comfort at home.</p>
+            </div>
+            <div class="door-card reveal">
+                <div class="door-card-icon">🧬</div>
+                <h4>Lab Collection at Home</h4>
+                <p>Convenient blood sample collection with home delivery of detailed reports and expert interpretation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials">
+        <div class="section-title">
+            <h2>Patient <span>Testimonials</span></h2>
+            <div class="section-divider"></div>
+            <p>Real stories from our satisfied and grateful patients</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">Doctor G's exceptional team provided outstanding care during my cardiac treatment. The doctors are highly skilled, compassionate, and the entire staff genuinely cares about patient wellness.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div class="author-info">
+                        <h5>Rajesh Kumar</h5>
+                        <p>Cardiac Patient</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">The door-to-door health checkup service is absolutely amazing! The team came to my home, completed all tests professionally without any hassle, and provided detailed health reports with personalized recommendations.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PS</div>
+                    <div class="author-info">
+                        <h5>Priya Singh</h5>
+                        <p>Health Checkup Program</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">Highly professional team with state-of-the-art facilities. The free health camp was very informative and comprehensive. Doctor G truly prioritizes patient health and community wellness.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AM</div>
+                    <div class="author-info">
+                        <h5>Anil Mehta</h5>
+                        <p>Health Camp Participant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section reveal">
+        <h2>Your Health is Our Greatest Responsibility</h2>
+        <p>Experience compassionate, world-class healthcare with a team dedicated to your wellness journey</p>
+        <button class="btn btn-primary" onclick="scrollTo('contact')">Book Your Appointment Today</button>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Get In <span>Touch</span></h2>
+            <div class="section-divider"></div>
+            <p>We're here to answer your questions and provide the care you need</p>
+        </div>
+        <div class="contact-top-grid">
+            <div class="contact-card reveal">
+                <div class="contact-icon">📍</div>
+                <h4>Location</h4>
+                <p>123 Medical Plaza, Healthcare Hub<br>Kanpur, Uttar Pradesh 208001<br>India</p>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-icon">📞</div>
+                <h4>Phone</h4>
+                <p>General: +91-95XXXX-XXXX<br>Emergency: 112 / +91-85XXXX-XXXX<br>Appointment: +91-90XXXX-XXXX</p>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-icon">✉️</div>
+                <h4>Email</h4>
+                <p>Info: info@doctorg.com<br>Support: support@doctorg.com<br>Queries: hello@doctorg.com</p>
+            </div>
+        </div>
+        <form class="contact-form-container" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service Required</label>
+                <input type="text" id="service" name="service" placeholder="e.g., General Checkup, Consultation, etc." required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us more about your health concerns..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Doctor G</h4>
+                <p>Doctor G is a leading healthcare provider committed to delivering world-class medical services with compassion, expertise, and advanced technology for the betterment of community health.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Facebook">f</a>
+                    <a href="#" class="social-link" title="Twitter">𝕏</a>
+                    <a href="#" class="social-link" title="Instagram">📷</a>
+                    <a href="#" class="social-link" title="LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#checkup">Health Checkup</a></li>
+                    <li><a href="#door-to-door">Door Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Patient Resources</h4>
+                <ul>
+                    <li><a href="#">Patient Rights</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Health Blog</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Emergency Services</h4>
+                <ul>
+                    <li>24/7 Ambulance<br><strong>+91-95XXXX-XXXX</strong></li>
+                    <li>Medical Emergency<br><strong>112</strong></li>
+                    <li><a href="#">Emergency Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Doctor G Healthcare. All Rights Reserved. | Crafted with ❤️ for Your Health</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
