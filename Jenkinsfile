@@ -19,7 +19,7 @@ pipeline {
                   --name httpd \
                   -p 80:80 \
                   -v $WORKSPACE:/usr/local/apache2/htdocs \
-                  http
+                  httpd
                 '''
             }
         }
