@@ -21,7 +21,7 @@ pipeline {
                 script {
                     sh 'docker stop doctor-g-website || true'
                     sh 'docker rm doctor-g-website || true'
-                    sh 'docker run -d -p 8081:80 --name doctor-g-website doctor-g-website:latest'
+                    sh 'docker run -d -p 80:80 --name doctor-g-website doctor-g-website:latest'
                 }
             }
         }
