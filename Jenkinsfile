@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t doctor-g-website:latest .'
+                sh 'docker build -t httpd .'
             }
         }
 
@@ -16,10 +16,10 @@ pipeline {
                 docker rm doctor-g-website || true
 
                 docker run -d \
-                  --name doctor-g-website \
-                  -p 8081:80 \
+                  --name httpd \
+                  -p 80:80 \
                   -v $WORKSPACE:/usr/local/apache2/htdocs \
-                  doctor-g-website:latest
+                  httpd
                 '''
             }
         }
